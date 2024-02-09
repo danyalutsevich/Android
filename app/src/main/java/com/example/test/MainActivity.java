@@ -41,20 +41,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button b = findViewById(R.id.button2);
-        b.setOnClickListener(v -> {
-                    if (b2ClickCount < 20) {
-                        b.setScaleX(b.getScaleX() + 0.09f);
-                        b2ClickCount += 1;
-                        b.setText(String.valueOf(b2ClickCount));
-                    } else {
-                        Toast.makeText(this, "Enough", Toast.LENGTH_LONG).show();
-                    }
-                    TextView textView = findViewById(R.id.textView);
 
-                    textView.setText(formatDuration());
-                }
-        );
+        
+//        Button b = findViewById(R.id.button2);
+//        b.setOnClickListener(v -> {
+//                    if (b2ClickCount < 20) {
+//                        b.setScaleX(b.getScaleX() + 0.09f);
+//                        b2ClickCount += 1;
+//                        b.setText(String.valueOf(b2ClickCount));
+//                    } else {
+//                        Toast.makeText(this, "Enough", Toast.LENGTH_LONG).show();
+//                    }
+//                    TextView textView = findViewById(R.id.textView);
+//
+//                    textView.setText(formatDuration());
+//                }
+//        );
     }
 
     public void func(View view) {

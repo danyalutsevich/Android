@@ -1,42 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
+    <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:onClick="func"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.103" />
+    </ListView>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="175dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="208dp"
-        android:text="Button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@color/black"-->
+
+    <!--    >-->
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#ff0000"-->
+    <!--        android:text="red"-->
+    <!--        android:textAlignment="viewStart"-->
+    <!--        android:textSize="30sp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/button1"-->
+    <!--        android:layout_alignStart="@id/button1"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#ff8800"-->
+    <!--        android:text="orange"-->
+    <!--        android:textAlignment="viewStart"-->
+    <!--        android:textSize="30sp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/button2"-->
+    <!--        android:layout_alignStart="@id/button1"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#ffff00"-->
+    <!--        android:text="yellow"-->
+    <!--        android:textAlignment="viewStart"-->
+    <!--        android:textSize="30sp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/button3"-->
+    <!--        android:layout_alignStart="@id/button1"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#00ff00"-->
+    <!--        android:text="green"-->
+    <!--        android:textAlignment="viewStart"-->
+    <!--        android:textSize="30sp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/button4"-->
+    <!--        android:layout_alignStart="@id/button1"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#0000ff"-->
+    <!--        android:text="blue"-->
+    <!--        android:textAlignment="viewStart"-->
+    <!--        android:textSize="30sp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button6"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/button5"-->
+    <!--        android:layout_alignStart="@id/button1"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#4B0082"-->
+    <!--        android:text="indigo"-->
+    <!--        android:textAlignment="viewStart"-->
+    <!--        android:textSize="30sp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button7"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/button6"-->
+    <!--        android:layout_alignStart="@id/button1"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:background="#7F00FF"-->
+    <!--        android:text="violet"-->
+    <!--        android:textAlignment="viewStart"-->
+    <!--        android:textSize="30sp" />-->
+
+
+    <!--        <Button-->
+    <!--            android:layout_row="0"-->
+    <!--            android:layout_column="0"-->
+    <!--            android:layout_columnSpan="2"-->
+    <!--            android:layout_gravity="fill_horizontal"-->
+    <!--            android:text="button1"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            />-->
+
+
+    <!--        <Button-->
+    <!--            android:layout_row="1"-->
+    <!--            android:layout_column="1"-->
+    <!--            android:text="button2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_columnWeight="1"-->
+    <!--            android:layout_rowWeight="1"-->
+    <!--            />-->
+    <!--        <Button-->
+    <!--            android:layout_row="0"-->
+    <!--            android:layout_column="2"-->
+    <!--            android:text="button3"-->
+    <!--            android:layout_gravity="fill_vertical"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_rowSpan="2"-->
+    <!--            />-->
+
+    <!--        <Button-->
+    <!--            android:layout_row="1"-->
+    <!--            android:layout_column="0"-->
+    <!--            android:text="button4"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="fill_vertical"-->
+    <!--            android:layout_rowSpan="2"-->
+    <!--            />-->
+    <!--        <Button-->
+    <!--            android:layout_row="2"-->
+    <!--            android:layout_column="1"-->
+    <!--            android:text="button5"-->
+    <!--            android:layout_columnSpan="2"-->
+    <!--            android:layout_gravity="fill_horizontal"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            />-->
+
+
+    <!--</RelativeLayout>-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Button"-->
+    <!--        android:onClick="func"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+    <!--        app:layout_constraintVertical_bias="0.103" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button2"-->
+    <!--        android:layout_width="175dp"-->
+    <!--        android:layout_height="96dp"-->
+    <!--        android:layout_marginStart="116dp"-->
+    <!--        android:layout_marginTop="208dp"-->
+    <!--        android:text="Button2"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--</GridLayout>-->
