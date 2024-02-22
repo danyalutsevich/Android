@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         editor = prefs.edit();
 
         totalCount = prefs.getInt("counter", 0);
-//        totalCount = 9;
+        totalCount = 9;
         totalCount++;
         editor.putInt("counter", totalCount);
         editor.commit();
